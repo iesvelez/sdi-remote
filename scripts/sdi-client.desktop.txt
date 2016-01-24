@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Control Remoto SDI
+Comment=Cliente de Control Remoto SDI
+Exec=/home/scripts/sdi-client.sh
+Icon=/usr/share/icons/gnome/32x32/apps/preferences-desktop-remote-desktop.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=GNOME;KDE;System;
