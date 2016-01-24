@@ -47,3 +47,23 @@ Seguidamente, colocaremos un lanzador en el escritorio para que cuando el profes
 * x11vnc (servidor VNC)
 * xtightvncviewer (cliente)
 
+## Instrucciones
+
+### Instalar el servicio en la SDI
+
+Para instalar los scripts en la SDI:
+
+1. Ejecutar `install-sdi-server.sh`
+2. Editar `/home/scripts/sdi.conf` para configurar el nombre identificativo de la SDI, el puerto de escucha y la contraseña de conexión.
+
+Una vez instalado, el script se ejecutará automáticamente cada vez que un usuario inicie sesión. Por lo tanto debemos considerar la conveniencia de dejar activado el inicio de sesión automático en la SDI.
+
+### Instalar el cliente en el equipo del profesor
+
+Para instalar los scripts en el equipo del profesor:
+
+1. Ejecutar `install-sdi-client.sh`
+2. Editar `/home/scripts/sdi.conf` para configurar el nombre identificativo de la SDI, el puerto de escucha y la contraseña de conexión.
+
+Una vez instalado, aparecerá un lanzador en el escritorio del usuario llamado `Control Remoto SDI`.
+
