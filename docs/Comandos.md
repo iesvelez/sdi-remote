@@ -1,10 +1,12 @@
-# Servidor
+# Algunas notas sobre la utilización de comandos
+
+## Servidor
 ~~~
 avahi-publish -s SDI1 _vnc._tcp  5900 "Solución Digital Integrada 1"
 ~~~
 
 
-# Publicar mediante archivo de configuración XML
+## Publicar mediante archivo de configuración XML
 `/etc/avahi/services/sdi.service`:
 
 	<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
@@ -19,14 +21,14 @@ avahi-publish -s SDI1 _vnc._tcp  5900 "Solución Digital Integrada 1"
 	</service-group>
 
 
-# Buscar servicio por nombre y obtener IPv4 y puerto del anfitrión
+## Buscar servicio por nombre y obtener IPv4 y puerto del anfitrión
 ~~~
 avahi-browse -trpk _vnc._tcp | grep SDI1 | grep = | grep IPv4 | cut -d ";" -f 8
 avahi-browse -trpk _vnc._tcp | grep SDI1 | grep = | grep IPv4 | cut -d ";" -f 9
 ~~~
 
 
-# Clientes VNC
+## Clientes VNC
 
 * xtightvncviewer
 * xvnc4viewer
@@ -34,7 +36,7 @@ avahi-browse -trpk _vnc._tcp | grep SDI1 | grep = | grep IPv4 | cut -d ";" -f 9
 * remmina
 
 
-# Servidores VNC
+## Servidores VNC
 
 * x11vnc
 * vino
