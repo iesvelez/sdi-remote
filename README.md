@@ -1,6 +1,6 @@
 # sdi-remote
 
-Conjunto de shell scripts para automatizar la búsqueda y control remoto de las SDI (Soluciones Digitales Integrales) desde el equipo del profesor.
+Conjunto de shell scripts para automatizar la búsqueda y control remoto de la SDI (Solución Digital Integral) desde el equipo del profesor.
 
 La Solución Digital Integral (SDI) consiste en una Pizarra Digital compuesta por varios elementos:
 
