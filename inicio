@@ -1,0 +1,8 @@
+#! /bin/bash
+
+find -name "*.sh" -exec chmod a+x {} \;
+
+echo Introduzca el número de pizarra:
+read NUM
+
+sed -i "s/SDI1/SDI$NUM/g" scripts/sdi.conf 
